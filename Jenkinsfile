@@ -28,6 +28,7 @@ pipeline {
             steps{
                 echo 'push the build artifacts'
                 echo 'completed'
+                echo '------------------------'
             }
         }
 
