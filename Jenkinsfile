@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build and Packaging') {
             steps {
+                echo 'added github webhook to trigger jenkins'
                 echo 'Hello Jenkins!'
                 echo 'Building...'
                 echo '---------------'
