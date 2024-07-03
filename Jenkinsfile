@@ -1,18 +1,35 @@
 pipeline {
     agent any
     stages {
-        stage('Hello-automate') {
+        stage('Build and Packaging') {
             steps {
-                echo 'Hello, Jenkins!'
+                echo 'Hello Jenkins!'
+                echo 'Building...'
                 echo '---------------'
             }
         }
-        stage('build-automate'){
+
+        stage('Testing'){
             steps{
-                echo 'starting build...'
+                echo 'starting test...'
                 echo '-----------------'
-                echo 'finished build'
+                echo 'finished test'
             }
         }
+
+        stage('Code Scanning'){
+            steps{
+                echo 'scanning starting...'
+                echo 'scanning completed'
+            }
+        }
+
+        stage('Push Artifacts'){
+            steps{
+                echo 'push the build artifacts'
+                echo 'completed'
+            }
+        }
+
     }
 }
