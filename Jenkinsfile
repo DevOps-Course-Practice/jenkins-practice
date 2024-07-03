@@ -1,13 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Hello') {
+        stage('Hello-automate') {
             steps {
                 echo 'Hello, Jenkins!'
                 echo '---------------'
             }
         }
-        stage('build'){
+        stage('build-automate'){
             steps{
                 echo 'starting build...'
                 echo '-----------------'
