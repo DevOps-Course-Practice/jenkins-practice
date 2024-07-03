@@ -30,6 +30,7 @@ pipeline {
                 echo 'push the build artifacts'
                 echo 'completed'
                 echo '------------------------'
+                echo 'change for see again'
             }
         }
 
